@@ -5,3 +5,4 @@
 
 **TO-DO**:
 - Re-do timing in Query 1 like in Query 3 (load time etc is not correct)
+- Find explanation for Query 4's speedup
