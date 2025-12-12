@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{xurl}
+
+\sloppy
+
+\setlength{\droptitle}{-10em}
+\usepackage[table]{xcolor}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setmonofont{Courier New}
+
+\usepackage{pgfplotstable}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\pgfplotsset{compat=newest}  % recommended
+
+\usepackage{polyglossia}
+\usepackage[final]{microtype}
+\setdefaultlanguage{greek}
+\setotherlanguages{english}
+
+\newfontfamily\greekfont{Times New Roman}
+\newfontfamily\greekfonttt{Times New Roman}
+\newfontfamily\greekfontsf{Times New Roman}
+\newfontfamily\englishfont{Times New Roman}
+
+\usepackage{listings}
+
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    keywordstyle=\color{purple}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{teal},
+    backgroundcolor=\color{white},
+    breaklines=true,
+    frame=single,
+    showstringspaces=false,
+    tabsize=4
+}
+
+\lstdefinestyle{cppstyle}{
+    language=C++,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    backgroundcolor=\color{white},
+    breaklines=true,
+    frame=single,
+    showstringspaces=false,
+    morekeywords={pragma},
+    morecomment=[l][\color{green!60!black}]\#,
+    alsoletter={\#}
+}
+
+\lstdefinestyle{cmdstyle}{
+    language=bash,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{teal},
+    backgroundcolor=\color{white},
+    breaklines=true,
+    frame=single,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily
+}
+
+%\usepackage[backend=biber, style=ieee]{biblatex}
+%\addbibresource{references.bib}
+
+%\usepackage{graphicx}
+%\graphicspath{{images/}}
+
+\usepackage{svg}
+\svgpath{{./images}}
+
+\setcounter{tocdepth}{3}
+
+\begin{document}
+
+\begin{titlepage}
+
+\noindent
+\begin{minipage}[t]{0.25\textwidth}
+    \vspace{0pt}
+    \includesvg[width=\textwidth]{emp_logo.svg}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.70\textwidth}
+    \vspace{0pt}
+    \raggedleft
+    {\Large Εθνικό Μετσόβιο Πολυτεχνείο}\\[0.3em]
+    {\large Σχολή Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών}\\
+    {Προχωρημένα Θέματα Βάσεων Δεδομένων}\\
+    {9ο εξάμηνο, ακαδημαϊκό έτος 2025-2026}
+\end{minipage}
+
+\vspace{3cm}
+
+\begin{center}
+    {\huge \textbf{Εξαμηνιαία Εργασία}}\\[1cm]
+    {\large Ομάδα: group16}
+\end{center}
+
+\vfill
+
+\begin{center}
+    {\large Τάτση Αικατερίνη Δανάη, ΑΜ: 03121146}\\[0.3cm]
+    {\large Σπυρόπουλος Νικολας, ΑΜ: 03121202}
+\end{center}
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\input{query1}
+\pagebreak
+
+
+\end{document}

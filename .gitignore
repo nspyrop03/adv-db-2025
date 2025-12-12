@@ -1,1 +1,8 @@
 .ipynb_checkpoints
+
+*.aux
+*.log
+*.out
+*.toc
+
+report/svg-inkscape
