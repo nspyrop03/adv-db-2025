@@ -1,8 +1,2 @@
-**Note**: 
-- To measure time make sure you restart the kernel and re-run the whole process from the beginning to make Spark not use its cache from before
-
----
-
-**TO-DO**:
-- ~~Re-do timing in Query 1 like in Query 3 (load time etc is not correct)~~
-- ~~Find explanation for Query 4's speedup~~
+**Intall Notes**:
+- Προκειμένου να τρέξουμε και τα 5 queries, αρκεί να τα αντιγράψουμε στο SageMaker του AWS και να τα ανοίξουμε με το Jupyter Lab.
